@@ -8,7 +8,7 @@ version := "1.0"
 // https://mvnrepository.com/artifact/org.apache.spark/spark-core
 // scalaVersion := "2.12.4"
 
-scalaVersion := "2.11.7"
+scalaVersion := "2.11.12"
 
 // Don't confuse '%' with '%%':
 // https://stackoverflow.com/questions/43873639/sbt-got-error-when-run-spark-hello-world-code
@@ -17,6 +17,6 @@ libraryDependencies ++= Seq(
   // https://stackoverflow.com/questions/37505380/java-lang-noclassdeffounderror-scala-reflect-api-typecreator
   // https://github.com/sbt/sbt/issues/2958
   "org.scala-lang" % "scala-reflect" % s"${scalaVersion}" % "provided",
-  "org.apache.spark" %% "spark-core" % "2.2.0",
-  "org.apache.spark" %% "spark-mllib" % "2.2.0",
-  "com.typesafe.akka" %% "akka-actor" % "2.5.6")
+  "org.apache.spark" %% "spark-core" % "2.3.0",
+  "org.apache.spark" %% "spark-mllib" % "2.3.0",
+  "com.typesafe.akka" %% "akka-actor" % "2.5.11")

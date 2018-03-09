@@ -45,6 +45,15 @@ scala>
 
 ### Tip and tricks
 
+#### Scala >2.11
+
+Spark does NOT support scala 2.12+:
+
+* https://stackoverflow.com/questions/42887359/using-scala-2-12-with-spark-2-1
+* https://issues.apache.org/jira/browse/SPARK-14220
+* https://mvnrepository.com/artifact/org.apache.spark/spark-core
+
+
 #### Hadoop “Unable to load native-hadoop library for your platform” warning
 
 * https://stackoverflow.com/questions/40015416/spark-unable-to-load-native-hadoop-library-for-your-platform
