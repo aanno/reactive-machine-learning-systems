@@ -11,7 +11,7 @@ object SparkIntroduction {
     // handle args
 
     // setup
-    val session = SparkSession.builder.appName("Simple ModelExample").getOrCreate()
+    val session = SparkSession.builder.master("local").appName("Simple ModelExample").getOrCreate()
     import session.implicits._
 
     // Load and parse the train and test data
