@@ -23,14 +23,14 @@ object SparkIntroduction {
 
     val trainingData = session.read.textFile(trainingDataPath)
     val trainingParsed = trainingData.map { line =>
-      val parts = line.split(',')
-      LabeledPoint(parts(0).toDouble, Vectors.dense(parts(1).split(' ').map(_.toDouble)))
+      val parts = line.split(',').map(_.toDouble)
+      LabeledPoint(parts(0), Vectors.dense(parts.slice(3, 3)))
     }.cache()
 
     val testingData = session.read.textFile(testingDataPath)
     val testingParsed = testingData.map { line =>
-      val parts = line.split(',')
-      LabeledPoint(parts(0).toDouble, Vectors.dense(parts(1).split(' ').map(_.toDouble)))
+      val parts = line.split(',').map(_.toDouble)
+      LabeledPoint(parts(0), Vectors.dense(parts.slice(3, 3)))
     }.cache()
 
     // Building the model
