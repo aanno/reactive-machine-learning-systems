@@ -18,7 +18,8 @@ object DataCollector extends App {
   val timeout = Duration(10, TimeUnit.SECONDS)
 
   val driver = ReactiveCouchbaseDriver()
-  val bucket = driver.bucket("default")
+  // val bucket = driver.bucket("default")
+  val bucket = driver.bucket(List("127.0.0.1"), "8091", "pools", "default", "alias", "test", "dazumal", 0)
 
 
   case class PreyReading(sensorId: Int,
