@@ -14,6 +14,8 @@ object DatabaseInteraction extends App {
     .setAppName("couchbaseQuickstart")
     .setMaster("local[*]")
     .set("com.couchbase.bucket.default", "")
+    .set("com.couchbase.username", "test")
+    .set("com.couchbase.password", "")
 
   // Generate The Context
   val sc = new SparkContext(conf)
