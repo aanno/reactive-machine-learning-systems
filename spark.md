@@ -61,6 +61,13 @@ Spark does NOT support scala 2.12+:
 
 ## Documentation
 
+* https://jaceklaskowski.gitbooks.io/mastering-apache-spark/content/spark-submit.html
+* https://jaceklaskowski.gitbooks.io/mastering-spark-sql/spark-sql-SparkSession.html?q=submit
+
+### Clustered Spark
+
+* https://spark.apache.org/docs/latest/cluster-overview.html
+
 ### API
 
 * https://spark.apache.org/docs/2.3.0/api/scala/index.html
