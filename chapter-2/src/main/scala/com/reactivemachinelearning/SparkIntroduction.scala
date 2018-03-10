@@ -45,8 +45,8 @@ object SparkIntroduction {
 
     // Report performance statistics
     val metrics = new MulticlassMetrics(predictionsAndLabels.rdd)
-    val precision = metrics.precision
-    val recall = metrics.recall
+    val precision = metrics.accuracy
+    val recall = metrics.accuracy
     println(s"Precision: $precision Recall: $recall")
 
     // Save model
